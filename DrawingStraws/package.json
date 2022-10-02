@@ -1,0 +1,15 @@
+{
+  "name": "drawing-straws",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "CSY",
+  "license": "MIT",
+  "dependencies": {
+    "node-xlsx": "^0.21.0"
+  }
+}
