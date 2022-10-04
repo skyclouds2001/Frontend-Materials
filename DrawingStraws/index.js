@@ -1,12 +1,14 @@
 const xlsx = require('node-xlsx');
 
+const { filePath } = require('./config');
+
 const SIZE = 68;
 
 const leaders = 5;
 
 const rand = Math.floor(Math.random() * (SIZE - leaders) + 1) + 1 + leaders;
 
-const [{ data }] = xlsx.parse('D:/工作/青协/2022青年志愿者协会干部层信息收集表.xlsx');
+const [{ data }] = xlsx.parse(filePath);
 
 const person = data[rand];
 
