@@ -12,16 +12,17 @@
       border: none;
       box-sizing: border-box;
     }
-    body {
-      overflow: hidden;
-    }
-    .iframe {
-      width: 100%;
-      height: 100vh;
-    }
   </style>
+  <script>
+    window.addEventListener('load', () => {
+      document.getElementById('button').addEventListener('click', function handleClick () {
+      window.open('https://view.officeapps.live.com/op/view.aspx?src=https://gitee.com/skyclouds2001/skyclouds2001/raw/master/test.docx', 'test', 'width=1000,height=800,toolbar=0,titlebar=0,location=0,menubar=0,status=0')
+      })
+    })
+  </script>
 </head>
 <body>
-  <iframe class="iframe" name="iframe" importance="high" referrerpolicy="no-referrer" src="https://view.officeapps.live.com/op/view.aspx?src=https://gitee.com/skyclouds2001/skyclouds2001/raw/master/test.docx"></iframe>
+  <button id="button">打开</button>
+  <!-- <iframe class="iframe" name="iframe" importance="high" referrerpolicy="no-referrer" src="https://view.officeapps.live.com/op/view.aspx?src=https://gitee.com/skyclouds2001/skyclouds2001/raw/master/test.docx"></iframe> -->
 </body>
 </html>
