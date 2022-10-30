@@ -1,0 +1,3 @@
+<view>
+  <input type="text" 	always-embed name="id" value="{{ id }}" />
+</view>

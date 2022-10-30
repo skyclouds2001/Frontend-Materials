@@ -1,0 +1,1 @@
+<button bind:tap="handleScanCode">扫码</button>
