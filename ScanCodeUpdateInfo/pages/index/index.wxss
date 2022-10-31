@@ -1,0 +1,8 @@
+.btn {
+  margin: 100rpx auto;
+}
+
+.img {
+  display: block;
+  margin: 100rpx auto;
+}

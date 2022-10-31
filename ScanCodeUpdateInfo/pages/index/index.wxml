@@ -1,1 +1,2 @@
-<button bind:tap="handleScanCode">扫码</button>
+<image class="img" mode="aspectFit" src="/icon.png" />
+<button type="primary" class="btn" bind:tap="handleScanCode">扫码</button>

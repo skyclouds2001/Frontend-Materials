@@ -1,4 +1,4 @@
-const BASE_URL = 'https://123.57.242.177/Batch/Batch/';
+const BASE_URL = 'https://www.foodmemory.com.cn:8443/Batch/Batch/';
 
 Page({
 
@@ -49,14 +49,14 @@ Page({
       },
       success: (res) => {
         console.log(res);
-        if (res.data.status === 0) {
+        if (res.data.Status === 0) {
           wx.showToast({
-            title: 'Success',
+            title: '更新成功',
             icon: 'success',
           });
         } else {
           wx.showToast({
-            title: 'Fail',
+            title: '更新失败',
             icon: 'error',
           });
         }
