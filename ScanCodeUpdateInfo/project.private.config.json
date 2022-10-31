@@ -6,5 +6,18 @@
     "urlCheck": false,
     "bigPackageSizeSupport": true
   },
-  "libVersion": "2.27.0"
+  "libVersion": "2.27.0",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "",
+          "pathName": "pages/update/update",
+          "query": "id=P1-1",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  }
 }

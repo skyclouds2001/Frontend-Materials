@@ -11,12 +11,12 @@ Page({
       .then((res) => {
         console.log(res);
         wx.navigateTo({
-          url: `/pages/update/update?url=${res.result}`,
-        })
+          url: `/pages/update/update?id=${res.result}`,
+        });
       })
       .catch((err) => {
         console.error(err);
-      })
-  }
+      });
+  },
 
-})
+});

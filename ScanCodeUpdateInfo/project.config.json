@@ -40,7 +40,7 @@
     }
   },
   "compileType": "miniprogram",
-  "libVersion": "2.19.4",
+  "libVersion": "2.27.0",
   "appid": "wx0f011012e5bb4d62",
   "projectname": "ScanCodeUpdateInfo",
   "condition": {},
