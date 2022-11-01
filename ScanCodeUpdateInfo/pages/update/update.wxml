@@ -1,15 +1,19 @@
 <view class="form">
   <view class="form-item">
-    <label for="OrderNo">OrderNo</label>
-    <input type="text" always-embed name="OrderNo" id="OrderNo" model:value="{{ OrderNo }}" disabled />
+    <view>OrderNo</view>
+    <view>{{ OrderNo }}</view>
   </view>
   <view class="form-item">
-    <label for="Product">Product</label>
-    <input type="text" always-embed name="Product" id="Product" model:value="{{ Product }}" />
+    <view>Product</view>
+    <view>{{ Product }}</view>
   </view>
   <view class="form-item">
-    <label for="Orderer">Orderer</label>
-    <input type="text" always-embed name="Orderer" id="Orderer" model:value="{{ Orderer }}" />
+    <view>Orderer</view>
+    <view>{{ Orderer }}</view>
   </view>
-  <button bind:tap="postData">提交</button>
+  <view class="form-item">
+    <view style="height: 12em;">Comment</view>
+    <textarea model:value="{{ Comments }}" placeholder="Please input comment" maxlength="500" confirm-type="done" disable-default-padding></textarea>
+  </view>
+  <button type="primary" bind:tap="postData">提交</button>
 </view>

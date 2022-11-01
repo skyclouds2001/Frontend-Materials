@@ -6,6 +6,7 @@ Page({
     OrderNo: '',
     Product: '',
     Orderer: '',
+    Comments: '',
   },
 
   onLoad(options) {
@@ -37,15 +38,14 @@ Page({
   },
 
   postData() {
-    const { OrderNo, Orderer, Product } = this.data;
-    console.log(OrderNo, Orderer, Product);
+    const { Comments, OrderNo } = this.data;
+    console.log(OrderNo, Comments);
     wx.request({
       url: BASE_URL + 'SubmitOrderComments',
       method: 'POST',
       data: {
-        OrderNo,
-        Orderer,
-        Product,
+        orderNo: OrderNo,
+        comments: Comments,
       },
       success: (res) => {
         console.log(res);

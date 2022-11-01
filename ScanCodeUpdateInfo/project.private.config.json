@@ -3,7 +3,7 @@
   "projectname": "ScanCodeUpdateInfo",
   "setting": {
     "compileHotReLoad": false,
-    "urlCheck": false,
+    "urlCheck": true,
     "bigPackageSizeSupport": false
   },
   "libVersion": "2.27.0",
