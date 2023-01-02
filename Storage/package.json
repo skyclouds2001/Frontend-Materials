@@ -1,0 +1,16 @@
+{
+  "name": "storage",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "packageManager": "npm@9.2.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "skyclouds2001",
+  "license": "MIT",
+  "dependencies": {
+    "crypto-js": "^4.1.1"
+  }
+}
