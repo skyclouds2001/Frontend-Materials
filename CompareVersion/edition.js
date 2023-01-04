@@ -2,8 +2,8 @@
  * 判断版本号
  * 返回 -1 代表前边的大
  * 返回 1 代表后边的大
- * @param first {string}
- * @param second {string}
+ * @param {string} first
+ * @param {string} second
  * @return {-1 | 0 | 1}
  */
 const compareVersion = function (first, second) {
