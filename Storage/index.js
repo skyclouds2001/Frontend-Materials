@@ -23,7 +23,19 @@ const config = {
 }
 
 /** 判断是否支持 Storage isSupportStorage */
-export const isSupportStorage = () => {}
+export const isSupportStorage = () => {
+  if (!window) {
+    throw new Error('当前环境非浏览器，无法消费全局window实例')
+  }
+  if (!window.localStorage) {
+    throw new Error('当前环境非无法使用localStorage')
+  }
+  if (!window.sessionStorage) {
+    throw new Error('当前环境非无法使用sessionStorage')
+  }
+
+  return typeof Storage !== 'undefined' ? true : false
+}
 
 /**
  * 设置 setStorage
