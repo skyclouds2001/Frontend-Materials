@@ -37,20 +37,25 @@ const decrypt = (data: string): string => {
   ).toString(CryptoJS.enc.Utf8).toString()
 }
 
-export const getStorage = (key: string): any => {
-  key = prefix + '_' + key
+export const getStorage = <T = unknown>(key: string): T | null => {
+  const s_key = prefix + '_' + key
 
-  if (storage.getItem(key) == null) {
+  if (storage.getItem(s_key) == null) {
     return null
   }
 
-  const data: Data = JSON.parse(decrypt(storage.getItem(key) as string))
+  const data: Data = JSON.parse(decrypt(storage.getItem(s_key) as string))
 
-  return data.expire + data.time <= Date.now() ? data.value : null
+  if (data.expire + data.time <= Date.now()) {
+    return data.value
+  } else {
+    removeStorage(key)
+    return null
+  }
 }
 
-export const setStorage = (key: string, value: any, expire = 0): void => {
-  key = prefix + '_' + key
+export const setStorage = <T = unknown>(key: string, value: T | null, expire = 0): void => {
+  const s_key = prefix + '_' + key
   if (value === null || value === undefined) {
     value = null
   }
@@ -62,16 +67,30 @@ export const setStorage = (key: string, value: any, expire = 0): void => {
     JSON.stringify({
       value,
       time: Date.now(),
-      expire
+      expire,
     })
   )
 
-  storage.setItem(key, data)
+  storage.setItem(s_key, data)
 }
+
+export const removeStorage = (key: string): void => {
+  const s_key = prefix + '_' + key
+  storage.removeItem(s_key)
+}
+
+export const clearStorage = (): void => {
+  storage.clear()
+}
+
+export const length = (): number => storage.length
 
 const Storage = {
   getStorage,
-  setStorage
+  setStorage,
+  removeStorage,
+  clearStorage,
+  length,
 }
 
 export default Storage
