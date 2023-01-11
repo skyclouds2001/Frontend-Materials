@@ -40,7 +40,7 @@ const decrypt = (data: string): string => {
 export const getStorage = <T = unknown>(key: string): T | null => {
   const s_key = prefix + '_' + key
 
-  if (storage.getItem(s_key) == null) {
+  if (storage.getItem(s_key) === null) {
     return null
   }
 
