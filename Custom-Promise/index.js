@@ -1,3 +1,5 @@
+// https://zhuanlan.zhihu.com/p/144058361
+
 class Promise {
   static PENDING = 'pending'
   static FULFILLED = 'fulfilled'
