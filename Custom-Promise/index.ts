@@ -45,6 +45,24 @@ class _Promise <T = any> {
 
   // todo
   public then <P = T, Q = never> (onfulfilled: ((value: T) => P) | null | undefined, onrejected: ((reason: any) => Q) | null | undefined): _Promise<P | Q> {
+    if (this.status === _Promise.FULFILLED) {
+      if (onfulfilled) {
+        try {
+          onfulfilled(this.value)
+        } catch (error) {
+        }
+      }
+    }
+    if (this.status === _Promise.REJECTED) {
+      if (onrejected) {
+        try {
+          onrejected(this.reason)
+        } catch (error) {
+        }
+      }
+    }
+    if (this.status === _Promise.PENDING) {}
+
     return new _Promise((resolve, reject) => {})
   }
 
