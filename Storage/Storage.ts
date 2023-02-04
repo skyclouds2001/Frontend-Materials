@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { lowerCase } from 'lodash-es'
 import CryptoJS from 'crypto-js'
 
