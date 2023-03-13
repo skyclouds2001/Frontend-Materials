@@ -1,7 +1,7 @@
 /**
  * Make all property type in T to be become never
  *
- * - equal to Record<T, never>
+ * @deprecated *equal to Record<T, never>*
  */
 type Never<T> = {
   [K in keyof T]: never
@@ -10,7 +10,7 @@ type Never<T> = {
 /**
  * Make all property type in T to be become null
  *
- * - equal to Record<T, null>
+ * @deprecated *equal to Record<T, null>*
  */
 type Null<T> = {
   [K in keyof T]: null
@@ -19,7 +19,7 @@ type Null<T> = {
 /**
  * Make all property type in T to be undefined
  *
- * - equal to Record<T, undefined>
+ * @deprecated *equal to Record<T, undefined>*
  */
 type Undefined<T> = {
   [K in keyof T]: undefined
@@ -28,7 +28,7 @@ type Undefined<T> = {
 /**
  * Make all property type in T to be null or undefined
  *
- * - equal to Record<T, null | undefined>
+ * @deprecated *equal to Record<T, null | undefined>*
  */
 type Nullish<T> = {
   [K in keyof T]: null | undefined
