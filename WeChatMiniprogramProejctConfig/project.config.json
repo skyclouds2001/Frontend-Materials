@@ -1,0 +1,61 @@
+{
+  "miniprogramRoot": "",
+  "compileType": "miniprogram",
+  "setting": {
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "minifyWXSS": true,
+    "minifyWXML": true,
+    "uglifyFileName": true,
+    "ignoreUploadUnusedFiles": true,
+    "autoAudits": true,
+    "urlCheck": true,
+    "compileHotReLoad": true,
+    "preloadBackgroundData": false,
+    "lazyloadPlaceholderEnable": false,
+    "useStaticServer": false,
+    "bigPackageSizeSupport": true,
+    "babelSetting": {
+      "ignore": [],
+      "outputPath": "",
+      "disablePlugins": []
+    },
+    "useCompilerPlugins": [
+      "typescript",
+      "sass",
+      "less"
+    ],
+    "disableUseStrict": false,
+    "uploadWithSourceMap": true,
+    "packNpmManually": true,
+    "packNpmRelationList": [
+      {
+        "packageJsonPath": "./package.json",
+        "miniprogramNpmDistDir": "./"
+      }
+    ],
+    "coverView": false,
+    "ignoreDevUnusedFiles": true,
+    "checkInvalidKey": true,
+    "showShadowRootInWxmlPanel": true,
+    "useIsolateContext": true,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "showES6CompileOption": false,
+    "condition": false
+  },
+  "libVersion": "latest",
+  "appid": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "projectname": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
+}
