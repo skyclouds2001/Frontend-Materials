@@ -35,5 +35,5 @@ type RO2 = ReplaceOnce<'a', '1', '54321 54321'>
 type RA1 = ReplaceAll<'a', '1', 'abcde abcde'>
 type RA2 = ReplaceAll<'a', '1', '54321 54321'>
 
-type I1 = Includes<'abcdefg', 'a'>
-type I2 = Includes<'abcdefg', '1'>
+type In1 = Includes<'abcdefg', 'a'>
+type In2 = Includes<'abcdefg', '1'>
