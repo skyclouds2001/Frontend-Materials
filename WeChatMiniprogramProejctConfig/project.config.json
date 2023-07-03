@@ -2,6 +2,7 @@
   "miniprogramRoot": "",
   "compileType": "miniprogram",
   "setting": {
+    "condition": false,
     "es6": true,
     "enhance": true,
     "postcss": true,
@@ -17,6 +18,7 @@
     "lazyloadPlaceholderEnable": false,
     "useStaticServer": false,
     "bigPackageSizeSupport": true,
+    "skylineRenderEnable": false,
     "babelSetting": {
       "ignore": [],
       "outputPath": "",
@@ -44,8 +46,7 @@
     "useMultiFrameRuntime": true,
     "useApiHook": true,
     "useApiHostProcess": true,
-    "showES6CompileOption": false,
-    "condition": false
+    "showES6CompileOption": false
   },
   "libVersion": "latest",
   "appid": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
