@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>canvas-editor-playground</title>
+  <script src="./editor.js"></script>
+  <script>
+    window.addEventListener('load', () => {
+      window.editor = new Editor(document.getElementById('editor'), [
+        {
+          value: '理',
+          color: '#f00', // 文字颜色
+        },
+        {
+          value: '想',
+          backgroundColor: 'red', // 文字背景颜色
+        },
+        {
+          value: '青',
+          bold: true, // 加粗
+        },
+        {
+          value: '\n', // 换行
+        },
+        {
+          value: '年',
+          italic: true, // 斜体
+        },
+        {
+          value: '实',
+          underline: true, // 下划线
+        },
+        {
+          value: '验',
+          lineThrough: true, // 中划线
+        },
+        {
+          value: '室',
+          fontfamily: 'san-serif', // 字体
+        },
+        {
+          value: '\n', // 换行
+        },
+        {
+          value: '测',
+          size: 20, // 文字大小
+        },
+        {
+          value: '试',
+          lineHeight: 3, // 行高，倍数
+        },
+        {
+          value: '\n', // 换行
+        },
+        {
+          value: '测',
+        },
+        {
+          value: '试',
+        },
+      ])
+    })
+  </script>
+</head>
+
+<body style="margin: 0; padding: 0;">
+  <div id="editor" style="display: flex; justify-content: center; align-items: center;"></div>
+</body>
+
+</html>
